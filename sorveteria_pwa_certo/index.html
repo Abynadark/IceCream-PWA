@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        .carrosel > h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        img {
+            box-shadow: 0 1px 2px #0003;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .swiper {
+            height: auto;
+            margin-bottom: 20px; 
+        }
+
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 450px) {
+            .sobremesa {
+                height: 400px;
+            }
+
+            .espaco {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ICE CREAM</h1>
+    </header>
+
+    <main>
+        <section>    
+            <h2>Entre em Contato:</h2>    
+            <ul>
+            <li><a href="tel:+5581999999999">Celular: +55(81)99999-9999</a></li>
+            <li><a href="https://wa.me/5581999536966">WhatsApp: +55(81)99953-6966</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" >Instagram: @ice_dream</a></li>
+            <li><a href="maps.html">Endereço: Avenida Caxangá, 1000, Recife - PE.</a></li>
+            </ul>
+        </section>
+
+        <section id="sobrenos">
+            <h2>Quem somos?</h2>
+            <p>Bem-vindo à Ice Cream, onde cada colherada é uma viagem de sabor inesquecível! Fundada com paixão e dedicação, a Ice Cream nasceu do amor pelo bom sorvete e da vontade de oferecer aos nossos clientes uma experiência gelada única. Utilizamos ingredientes frescos e de alta qualidade para criar nossos sabores irresistíveis, sempre buscando inovação e autenticidade em cada receita. Com uma variedade de opções que vão desde os clássicos até criações exclusivas, temos o prazer de adoçar seus momentos especiais e transformar seu dia a dia em uma verdadeira festa de sabores. Venha nos visitar e descubra por que a Ice Cream é mais do que uma sorveteria, é um destino para os amantes de sorvete!
+            </p>
+        </section>
+        <section class="carrosel">
+            <h2>Nossas Sobremesas</h2>
+            <div class="swiper sobremesa">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/sorvetes_300x400 (1).jpg" alt="Imagem de sorvetes de casquinha">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/sorvetecopo_300x400.jpeg" alt="Imagem de um sorvete no copo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/picoles_300x400.jpeg" alt="Imagem de picolés">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/milkshake2_300x400.jpeg" alt="Imagem de um milkshake">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/milkshake4_300x400.jpeg" alt="Imagem de um milkshake">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/milkshake5_300x400.jpeg" alt="Imagem de um milkshake">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/topsundae_300x400.jpeg" alt="Imagem de um top sundae">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/sundae_300x400.jpeg" alt="Imagem de um sundae">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorvetes/acai2_300x400.jpeg" alt="Imagem de três açaís em copos">
+                    </div>
+                    
+                </div>
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+                <!-- Barra de rolagem -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <section class="carrosel">
+            <h2>Nosso Espaço</h2>
+            <div class="swiper espaco">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorveteria/espaco1_300x300.jpeg" alt="Imagem da sorveteria Ice Cream">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorveteria/espaco2_300x300.jpeg" alt="Imagem da sorveteria Ice Cream">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorveteria/espaco3_300_300.jpeg" alt="Imagem da sorveteria Ice Cream">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imagens/img_sorveteria/espaco4_300x300.jpeg" alt="Imagem da sorveteria Ice Cream">
+                    </div>
+                </div>
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+                <!-- Barra de rolagem -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </main>
+    <nav>
+        <a class="selecionado" href="index.html">
+            <img src="src/home.svg" alt="Ícone Home">
+            Home
+        </a>
+        <a href="cardapio.html">
+            <img src="src/menu.svg" alt="Ícone Menu">
+            Cardápio
+        </a>
+        <a href="maps.html">
+            <img src="src/mapa.svg" alt="Ícone Mapa">
+            Mapa
+        </a>
+    </nav>
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('sw.js')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pegarlocalizacao.js">
+    <style>
+        html, main {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        section{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ICE CREAM</h1>
+    </header>
+    <main>
+        
+        <section>
+                <div id="sorveteria">
+                    <p><strong>Endereço:</strong>Avenida Caxangá, 1000, Recife - PE</p>
+                    <p><strong>Distância:</strong> <span id="distance"></span> km</p>
+                    <p><strong>Tempo de Chegada:</strong> <span id="arrivalTime"></span> minutos</p>
+                    <p><strong>Telefone:</strong> <a href="tel:+550000000000">+55 00 0000-0000</a></p>
+                </div>
+                <div id="location">
+                    <button id="getLocation">Obter Minha Localização</button>
+                    <p><strong>Sua localização:</strong> <span id="userLocation"></span></p>
+                </div>
+        </section>
+         
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.48182450117!2d-34.92214302067108!3d-8.05223365972281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19181f48cc33%3A0x8fcfdfbcaeb8b35e!2sAv.%20Caxang%C3%A1%2C%201000%20-%20Iputinga%2C%20Recife%20-%20PE%2C%2050711-095!5e0!3m2!1sen!2sbr!4v1712339684426!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <nav>
+        <a href="index.html">
+            <img src="src/home.svg" alt="Ícone Home">
+            Home
+        </a>
+        <a href="cardapio.html">
+            <img src="src/menu.svg" alt="Ícone Menu">
+            Cardápio
+        </a>
+        <a class="selecionado" href="maps.html">
+            <img src="src/mapa.svg" alt="Ícone Mapa">
+            Mapa
+        </a>
+    </nav>
+</body>
+</html>
